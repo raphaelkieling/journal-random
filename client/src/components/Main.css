@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Comfortaa', cursive;
+}
+
+body{
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/round.png');
+}
+
+main{
+  margin:20px;
+  padding:20px;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius:7px;
+  display:flex;
+  flex-direction:column;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between; 
+  height:60px
+}
+
+nav .logo img{
+  height:100%;
+}
+
+nav .logo{
+  height:100%;
+}
+
+nav ul{
+  list-style:none;
+  color:white;
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+}
+
+nav ul li{
+  padding:5px 10px;
+  margin:5px;
+  height:18px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+li.active{
+  background:#515151;
+  border-radius:15px;
+}
+
+.container{
+  position:relative;
+  margin-top:40px;
+  margin:40px auto;
+  width:80%;
+  display:flex;
+  flex-direction:column;
+  justify-items:flex-end;
+}
+
+.presentation{
+  font-size:40px;
+  color:white;
+}
+
+.contrast-main-color{
+  color:#017261;
+}
+
+h1,h2,h3{
+  margin-bottom:10px;
+}
+
+.btn{
+  border:none;
+  padding:10px;
+  border-radius:15px;
+}
+
+.btn-header{
+    margin-top:40px;
+    color:white;
+    background:#00a58d;
+    font-size:18px;
+}
+
+.container-journal{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  position:relative;
+  top:-30px;
+}
+.card-journal{
+  max-width:600px;
+  width:100%;
+  background:white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  border-radius:7px;
+  overflow:hidden;
+}
+.card-journal-img{
+  width:100%;
+}
+
+.card-journal-img img{
+  width:100%;
+  height:auto;
+}
+
+.card-journal-body{
+  padding:20px;
+}
+
+@media (max-width: 600px){
+  nav ul{
+    display:none;
+  }
+  
+  nav{
+    justify-content:center;
+  }
+  .btn{
+    width: 100%;
+  }
+  
+  .card-journal{
+    width:95%;
+  }
+}
+
+/* Spinner */
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
